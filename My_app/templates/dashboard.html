@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Inventory | Dashboard</title>
+    <meta charset="UTF-8">
+        <!-- favicon -->
+        <!-- <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <!-- <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-32x32.png">
+        <!-- bootstrap css cdn -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- css stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- font styles cdn -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- bootstrap navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <img src="static/img/scan-img.png" alt="broken image" height="80px" width="180px">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="row myinven-logout">
+                <a type="button" class="btn btn-success mr-1" id="logout" href="/logout">LOGOUT</a>
+<!--                <a type="button" class="btn btn-warning mr-1" id="register" href="register">REGISTER</a> -->
+<!--                <a type="button" class="btn btn-primary mr-1" id="myinven" href="display">My Inventory</a> -->
+              </div>
+            </div>
+          </nav>
+          <!-- navbar ends -->
+
+        <!-- what we focus on -->
+        <section class="our-focus">
+            <div class="container">
+              <h2 class="text-center mt-3">Available Options</h2>
+              <div class="row ml-2 mt-2">
+                <div class="col-lg-3 mr-5" id="focus-first">
+                  <div class="card" style="width: 19rem;">
+                    <!-- <img src="assets/img/home kids.jpg" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">My Inventory</h5>
+                      <p class="card-text">Getting proper details of your inventory is very important. Wanna have a Quick check ? Use this option.</p>
+                      <a href="display" class="btn btn-primary">Check Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 mr-5" id="focus-second">
+                  <div class="card" style="width: 20rem;">
+                    <!-- <img src="assets/img/friendship day.JPG" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">New order request</h5>
+                      <p class="card-text">Wanna increase your inventory ? Use this option.</p>
+                        <a href="request" class="btn btn-primary">Request</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- focus section ends -->
+
+        <!-- footer starts -->
+          <!-- Site footer -->
+          </body>
+</html>
