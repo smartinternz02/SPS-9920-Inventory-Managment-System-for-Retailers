@@ -107,20 +107,20 @@ def req_inven():
          cursor.execute('SELECT * FROM inven WHERE aadhar = % s', (session['aadhar'], ))
          account = cursor.fetchone()
          #print(account)     
- 
-         #aadharnum += account[1]
-         raw_grocer = str(int(raw_grocer)+account[1])
-         diff_oils = str(int(diff_oils)+account[2])
-         package_food = str(int(package_food)+account[3])
-         diary_prod = str(int(diary_prod)+account[4])
-         biscuits = str(int(biscuits)+account[5])
          
          cursor = mysql.connection.cursor()
          
          if not account:
              cursor.execute('INSERT INTO inven VALUES (% s, % s, % s, % s,% s, % s)', (aadharnum, raw_grocer, diff_oils, package_food, diary_prod, biscuits),)
          else:
-             cursor.execute('UPDATE inven SET raw_groceries = % s, different_oils = % s, packaged_food = % s, diary_products = % s, biscuits = % s', (raw_grocer, diff_oils, package_food, diary_prod, biscuits))
+              #aadharnum += account[1]
+              raw_grocer = str(int(raw_grocer)+account[1])
+              diff_oils = str(int(diff_oils)+account[2])
+              package_food = str(int(package_food)+account[3])
+              diary_prod = str(int(diary_prod)+account[4])
+              biscuits = str(int(biscuits)+account[5])
+              
+              cursor.execute('UPDATE inven SET raw_groceries = % s, different_oils = % s, packaged_food = % s, diary_products = % s, biscuits = % s', (raw_grocer, diff_oils, package_food, diary_prod, biscuits))
          
          mysql.connection.commit()
          
