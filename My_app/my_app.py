@@ -11,9 +11,9 @@ app = Flask(__name__)
 app.secret_key = 'a'
 
 app.config['MYSQL_HOST'] = 'remotemysql.com'
-app.config['MYSQL_USER'] = 'yU5vjKSbcq'
-app.config['MYSQL_PASSWORD'] = 'KH52Mi9VuD'
-app.config['MYSQL_DB'] = 'yU5vjKSbcq'
+app.config['MYSQL_USER'] = 'DB_name'
+app.config['MYSQL_PASSWORD'] = 'DB_password'
+app.config['MYSQL_DB'] = 'DB_name'
 
 mysql = MySQL(app)
 
@@ -125,13 +125,7 @@ def req_inven():
          mysql.connection.commit()
          
          msg = 'You have successfully placed your inventory request.'
-         session['loggedin'] = True
-         #TEXT = "Hello sandeep,a new appliaction for job position" +jobs+"is requested"
-         
-         #sendmail(TEXT,"sandeep@thesmartbridge.com")
-         #sendgridmail("sandeep@thesmartbridge.com",TEXT)
-         
-         
+         session['loggedin'] = True     
          
      elif request.method == 'POST':
          msg = 'Please fill out the form !'
@@ -178,7 +172,7 @@ def display():
                 elif (i == 5):
                     TEXT = "Hello"+account1[0]+", you've 0 qty of " +"biscuits"+". Please refill your stock."
                     
-                sendmail(TEXT,"agupta281091@gmail.com")
+                sendmail(TEXT,"target_email-ID")
 
         return render_template('display.html',msg = msg, account = account)
 
