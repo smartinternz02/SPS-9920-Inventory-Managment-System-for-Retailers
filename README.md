@@ -10,6 +10,8 @@ This repository contains all the supporting files that is developed while creati
 
 #### To pull this docker image use command: docker pull akash0087/retinvcapp:v4
 
+#### URL of the project: akashguptaapp.apps.pcfdev.in
+
 *** Phase-1 : Identiying the aspects for which HTML pages needs to be designed i.e home, login, registration etc. pages.
 
 *** Phase-2: Setting up the MySQL server at http://remotemysql.com/ .
