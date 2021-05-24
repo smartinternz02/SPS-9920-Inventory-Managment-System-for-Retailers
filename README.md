@@ -2,8 +2,10 @@
 This repository contains all the supporting files that is developed while creating a full fledged project in python and flask.
 
 ********************************************************************
-    Phases that were encountered while building this project
+###    Phases that were encountered while building this project
 ********************************************************************
+
+#### To pull this docker image use command: docker pull akash0087/retinvcapp:v4
 
 *** Phase-1 : Identiying the aspects for which HTML pages needs to be designed i.e home, login, registration etc. pages.
 
