@@ -12,6 +12,8 @@ This repository contains all the supporting files that is developed while creati
 
 #### URL of the project: akashguptaapp.apps.pcfdev.in
 
+#### Link for demo: https://drive.google.com/file/d/1gYUjI9F1DnkJdyvMsC-96kA9OMqcG1Mp/view?usp=sharing
+
 *** Phase-1 : Identiying the aspects for which HTML pages needs to be designed i.e home, login, registration etc. pages.
 
 *** Phase-2: Setting up the MySQL server at http://remotemysql.com/ .
